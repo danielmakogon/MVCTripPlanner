@@ -1,0 +1,22 @@
+<%- include('./partials/header.ejs')%>
+<link rel="stylesheet" href="/login-styles.css">
+<%- include('./partials/navBar.ejs')%>
+
+
+        
+
+        <div id="content"> 
+
+            <h1>Profile Page</h1>
+            <%if (trips.length) {
+                trips.forEach(trip=>{%>
+                    <a id='userTrip' href="/trips/trip/<%= trip.id%>""><p><%= trip.name%></p></a>
+               <% });
+            } else { %>
+                <p>You have not created any trips yet</p>
+            <%}%>
+        </div>
+
+    </body>
+</html>
+<!-- <script type="text/javascript" src="../scripts/login_script.js"></script> -->

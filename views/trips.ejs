@@ -1,0 +1,79 @@
+<%- include('./partials/header.ejs')%>
+<link rel="stylesheet" href="/trips-styles.css">
+
+<%- include('./partials/navBar.ejs')%>
+
+        <br>
+        <br>
+        <div id="filter_main">
+            <div id="trips_title">Trips</div>
+            <div id="new_trip" >New Trip</div>
+        </div>
+        <div id='new_trip_body'>
+            <h1>New Trip</h1>
+            
+            <div id="map"></div>
+            <!-- <div id="output">
+
+            </div> -->
+            <div class='column-right'>
+                <form action='/trips/create' method="POST">
+                    <label for='tripname'>Trip Name:</label>
+                    <input type=text id='name' maxlength='10' name='name'><br>
+                    
+                    <label>Locations</label>
+                    <label for="from"><i class="far fa-dot-circle"></i></label>
+                    <input type="text" id="to" placeholder="Origin" class="form-control" name='origin'>
+                    <label for="to"><i class="fas fa-map-marker-alt"></i></label>
+                    <input type="text" id="from" placeholder="Destination" class="form-control" name='destination'>
+                    
+                    <br>
+                    <label>Budget</label>
+                    <input type = "number" id='min' placeholder = 'Min' name='min'> <input type = "number" id='max' placeholder="Max" name='max'>
+                    <br>
+                    <label>Interests</label>
+                    <select name = "interests" name='interests'>
+                        <option value = "SightSeeing" id= "interests" name="">Sight Seeing</option>
+                        <option value = "Food" id = "interests" name="interests">Food</option>
+                        <option value = "NightLife" id='interests' name='interests'>Night Life</option>
+                        <option value = "Entertainment" id='interests' name='interests'>Entertainment</option>
+                    </select>
+                    
+                    <br>
+                    <div>
+                        <label>Start Date:</label>
+                        <input type="date" id = 'startDate' name='startDate'>
+                        <label>End Date:</label>
+                        <input type="date" id = 'endDate' name='endDate'>
+                    </div>
+                    <br>
+                
+                    
+                
+                    <!-- <button class="btn btn-info btn-lg " onclick="calcRoute();"><i class="fas fa-map-signs"></i></button> -->
+                    <br>
+                    <button id = "create">Create!</button>
+                </form>
+
+                    
+                <div id="output">
+
+                </div>
+            </div>
+            
+        </div>
+        <div id=trips_main></div>
+        
+
+        <!-- <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAde_34Uk0vjfHUNTR7aCR_CnvF0BSZBWo&callback=initMap">
+            </script> -->
+            
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9N1a4Knte2eMJxIcafqnV442dDBBa9AU&libraries=places"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+            <script type="text/javascript" src="/trips_script.js"></script>
+
+
+    </body>
+</html>

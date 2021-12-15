@@ -1,0 +1,32 @@
+
+        <%- include('./partials/header.ejs')%>
+        <link rel="stylesheet" href="/friends-styles.css">
+        <%- include('./partials/navBar.ejs')%>
+
+        <div id='friends_main'>
+            <form action = "/user/addFriend" method="POST">
+                <div id='new_friends'>
+                        <input type='text' name="friendEmail" id='friendEmail' placeholder="Enter Friend's Email">
+                        <button class = "add_friend" type = "submit" >ADD</button>  
+                    
+                </div>
+            </form>
+            
+            <div id='friends'></div>
+            <%if(userFriendData.length > 0){%>
+            <%for(let i = 0; i < userFriendData.length; i++) {%>
+                <div class='friend'>
+                    <div class='info'>
+                        <h1><%= userFriendData[i].firstName + " " + userFriendData[i].lastName %> </h1>
+                        <h2><%= userFriendData[i].email%></h2>
+                    </div>
+                    <button class='remove_button'>Remove</button>
+                </div>
+            <%}%>
+            <%} else { %>
+                <h1> No friends added yet</h1>
+            <%}%>
+        </div>
+
+    </body>
+</html>

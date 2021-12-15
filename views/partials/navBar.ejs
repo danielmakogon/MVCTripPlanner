@@ -1,0 +1,35 @@
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script scr="/socket.io/socket.io.js"></script>
+<!-- <script src="../scripts/index_script.js"></script> -->
+
+</head>
+<body>
+    <%if(!user){%>
+        <div id="nav_bar">
+            <a id="nav_home" class="nav_link" href="/">Home</a>
+            <a id="nav_trips" class="nav_link" href="/trips">Trips</a>
+            <a id="nav_explore" class="nav_link" href="/trips/explore">Explore</a>
+            <a id="nav_login" class="nav_link" href="/user">Login</a>
+        </div>
+    <%} else{%>
+        <div id="nav_bar">
+            <a id="nav_home" class="nav_link" href="/">Home</a>
+            <a id="nav_trips" class="nav_link" href="/trips">Trips</a>
+            <a id="nav_explore" class="nav_link" href="/trips/explore">Explore</a>
+            <a id="nav_explore" class="nav_link" href="/user/profile">Profile</a>
+            <a id="nav_explore" class="nav_link" href="/user/friends">Friends</a>
+            <a id="nav_explore" class="nav_link" href="/user/logout">Log Out</a>
+            <a id="nav_login" class="nav_link"> <%= name%></a>
+            <!-- <a id="nav_login" class="nav_link" href="/user">Logout</a> -->
+        </div>
+        <%if(errorMessages.length > 0) {
+            errorMessages.forEach(message=>{%>
+                <div class = 'error'><%=message%></div>
+         <%   })
+        }%>
+        <%if(successMessages.length > 0) {
+            successMessages.forEach(message=>{%>
+                <div class = 'success'><%=message%></div>
+         <%   })
+        }%>
+        <%}%>

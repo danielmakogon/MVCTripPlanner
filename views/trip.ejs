@@ -1,0 +1,28 @@
+<%- include('./partials/header.ejs')%>
+<link rel="stylesheet" href="/login-styles.css">
+<%- include('./partials/navBar.ejs')%>
+
+
+        
+
+        <div id="content"> 
+
+            
+            <%if (trip) {%>
+                <h1><%= trip.name%></h1>
+                <p> Origin: <%= trip.origin%>
+                <p> Destination: <%= trip.destination%>
+                <!-- Format The date correctly -->
+                <p> Start Date: <%= trip.startDate%>
+                <p> End Date: <%= trip.endDate%>
+                <p> Budget $<%= trip.min%> - $<%= trip.max%>
+
+               <% }
+             else { %>
+                <p>You have not created any trips yet</p>
+            <%}%>
+        </div>
+
+    </body>
+</html>
+<!-- <script type="text/javascript" src="../scripts/login_script.js"></script> -->
