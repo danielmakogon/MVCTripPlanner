@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 body{
-    background-image: url("bg.png");
+    background: linear-gradient(to left top, blue, red) fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 0;
-    margin-top: 30px;
+    margin: 30px 0 0 0;
+    
 }
 
 #nav_bar{
@@ -118,4 +118,430 @@ button:hover{
     border: 3px solid #ddd;
     margin-bottom: 20px;
     text-align: left;
+}
+
+#trip_members_container{
+    margin: 30px 0 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border-width: thin;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
+#trip_members_header{
+    padding: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+.form-control{
+    text-align: center;
+    color: #ddd;
+}
+
+.text-control{
+    text-align: center;
+    color: #ddd;
+}
+
+#trip_members_body{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#budget_split_container{
+    margin: 30px 0 10px 0;
+    background-color: rgb(53, 53, 53);
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: antiquewhite;
+    border-radius: 8px;
+    border-width: thin;
+    border-style: solid;
+}
+
+#budget_split_header{
+    padding: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+.budget_display{
+    display: flex;
+    justify-content: space-around;
+    color: #ddd;
+}
+
+.memberTable{
+    display: flex;
+    color: #ddd;
+}
+
+#memberTable{
+    margin: 0 auto;
+    width: 95%;
+}
+
+#add_stop_container{
+    margin: 30px 0 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border-width: thin;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
+#add_stop_header{
+    padding: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+#add_stop_body{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#add_event_container{
+    margin: 30px 0 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border-width: thin;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
+#add_event_header{
+    padding: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+#add_event_body{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#event_list_container{
+    margin: 30px 0 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border-width: thin;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
+#event_list_header{
+    padding: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+#event_list_body{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.eventTable{
+    display: flex;
+    color: #ddd;
+}
+
+#eventTable{
+    margin: 0 auto;
+    width: 95%;
+}
+
+#stop_list_container{
+    margin: 30px 0 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border-width: thin;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
+#stop_list_header{
+    padding: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+#stop_list_body{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.stopTable{
+    display: flex;
+    color: #ddd;
+}
+
+#stopTable{
+    margin: 0 auto;
+    width: 95%;
+}
+
+.container-header{
+    padding: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;   
+}
+
+
+#trip_expense_container{
+    margin: 30px 0 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border-width: thin;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
+#trip_expense_body{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#expense_list_container{
+    margin: 30px 0 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border-width: thin;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
+#expense_list_header{
+    padding: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+#expense_list_body{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.expenseTable{
+    display: flex;
+    color: #ddd;
+}
+
+#expenseTable{
+    margin: 0 auto;
+    width: 95%;
+}
+
+#add_image_container{
+    margin: 30px 0 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border-width: thin;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
+#add_image_header{
+    padding: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+#add_image_body{
+    padding-bottom: 10px;
+    text-align: center;
+    color: #ddd;
+}
+
+.image-preview {
+    width: 300px;
+    min-height: 100px;
+    border: 2px solid #dddddd;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.image-preview__image {
+    display: none;
+    width: 100%;
+    
+}
+
+#images_container {
+    margin: 30px 0 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border-width: thin;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+
+#images_header{
+    padding: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+.imageTable{
+    display: flex;
+    color: #ddd;
+}
+
+#imageTable{
+    margin: 0 auto;
+    width: 95%;
+}
+
+#image_list_body{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.table-image {
+    width: 600px;
+    min-height: 200px;
+    border: 2px solid #dddddd;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.image-table__image {
+    display: block;
+    width: 100%;
+    
+}
+
+#calendar_container {
+    margin: 30px 0 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border-width: thin;
+    border-color: antiquewhite;
+    border-style: solid;
+    text-align: center;
+    justify-content: center;
+}
+
+#calendar_header{
+    padding: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+#calendar {
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+
+#calendarButton {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;}
+
+#calendarIframe {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#new_map{
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: auto 15px auto 15px auto;
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(53, 53, 53);
+    margin: 30px 0 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    border-width: thin;
+    border-color: antiquewhite;
+    border-style: solid;
+    text-align: center;
+    justify-content: center;
+}
+
+#new_map #other_map{
+    padding: 10x;
+    margin: 30px;
+    height:450px;
+    border-radius: 15px;
+    
+}
+
+#new_output, #trip__Name{
+    padding:15px;
+    text-align: center;
+    color: white;
+}
+
+#trip__Name{
+    font-size: 46px;
 }
