@@ -15,12 +15,19 @@
             <div id='friends'></div>
             <%if(userFriendData.length > 0){%>
             <%for(let i = 0; i < userFriendData.length; i++) {%>
-                <div class='friend'>
-                    <div class='info'>
-                        <h1><%= userFriendData[i].firstName + " " + userFriendData[i].lastName %> </h1>
-                        <h2><%= userFriendData[i].email%></h2>
-                    </div>
-                    <button class='remove_button'>Remove</button>
+               <div class='friend'>
+                    
+                        <form action = "/user/removeFriend/<%= userFriendData[i].id%>" method="POST">
+                            <div class='info'>
+                                <h1><%= userFriendData[i].firstName + " " + userFriendData[i].lastName %> </h1>
+                                <h2><%= userFriendData[i].email%></h2>
+                            </div>
+                        
+                        <button type="submit" class='remove_button' method="POST">Remove</button>
+                        </form>
+                    
+                    
+
                 </div>
             <%}%>
             <%} else { %>

@@ -163,5 +163,23 @@ exports.addFriends = (req, res, next) => {
         }
     })
     .catch(err=>next(err));
-        
+}
+exports.removeFriend = (req, res, next)=> {
+    let id = req.params.id;
+    model.findById(id)
+    .then(friend=>{
+        model.findByIdAndUpdate(req.session.user, {$pull: {friends: friend.id}})
+        .then(result =>{
+            model.findByIdAndUpdate(id, {$pull: {friends: req.session.user}})
+            .then(result=>{
+                if (result){
+                    res.redirect('/user/friends');
+                }
+            })
+            
+        })
+        .catch(err=>next(err));
+    })
+    .catch(err=>next(err));
+    
 }

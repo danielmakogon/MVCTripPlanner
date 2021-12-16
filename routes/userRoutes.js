@@ -10,5 +10,7 @@ router.get('/profile', controller.profile);
 router.get('/logout', controller.logout);
 router.get('/friends', controller.getFriends);
 router.post('/addFriend', controller.addFriends);
+router.post('/removeFriend/:id', controller.removeFriend);
+
 
 module.exports = router;

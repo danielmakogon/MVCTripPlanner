@@ -93,5 +93,5 @@ h1, h2{
 
 .remove_button{
     background-color: red;
-    margin: 40% 20% 40% 20%;
+    float: right;
 }
