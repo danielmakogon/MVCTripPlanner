@@ -16,7 +16,7 @@ const tripRoutes = require('./routes/tripRoutes');
 const app = express();
 
 //configuration
-let PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 let host = 'localhost';
 let url = "mongodb+srv://admin:4155TripMaster@cluster0.aoxmt.mongodb.net/TripMaster?retryWrites=true&w=majority";
 app.set('view engine', 'ejs');
