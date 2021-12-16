@@ -3,6 +3,9 @@
   "scripts": {
     "start": "node app.js"
   },
+  "engines": {
+    "node": "14.17.5"
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-flash": "^0.1.1",

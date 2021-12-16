@@ -122,13 +122,6 @@ var myLatLng = { lat: 35.397, lng: -80.844 };
         });
     
     }
-    
-    
-    
-    
-    
-
-    
     var cityOptions = {
         //optional constraints on autocomplete
         types: ['(cities)']

@@ -84,6 +84,7 @@ body{
 .info{
     display: grid;
     grid-template-rows: 60% 40%;
+    color: white;
 }
 
 h1, h2{
