@@ -16,7 +16,7 @@ const tripRoutes = require('./routes/tripRoutes');
 const app = express();
 
 //configuration
-let port = 4000;
+let PORT = process.env.PORT || 4000;
 let host = 'localhost';
 let url = "mongodb+srv://admin:4155TripMaster@cluster0.aoxmt.mongodb.net/TripMaster?retryWrites=true&w=majority";
 app.set('view engine', 'ejs');
@@ -46,7 +46,7 @@ app.use((req, res, next)=>{
 
 mongoose.connect("mongodb+srv://admin:4155TripMaster@cluster0.aoxmt.mongodb.net/TripMaster?retryWrites=true&w=majority", {})
 .then(()=> {
-    app.listen(port, host, ()=>{
+    app.listen(PORT, ()=>{
         console.log('Server is running on port', port);
     });
 })
