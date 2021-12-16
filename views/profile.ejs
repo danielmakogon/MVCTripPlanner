@@ -10,7 +10,7 @@
             <h1>Profile Page</h1>
             <%if (trips.length) {
                 trips.forEach(trip=>{%>
-                    <a id='userTrip' href="/trips/trip/<%= trip.id%>""><p><%= trip.name%></p></a>
+                    <a id='content' href="/trips/trip/<%= trip.id%>""><p><%= trip.name%></p></a>
                <% });
             } else { %>
                 <p>You have not created any trips yet</p>
