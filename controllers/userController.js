@@ -24,7 +24,7 @@ exports.login = (req, res, next)=>{
                 if (result) {
                     req.session.user = user._id;
                     req.session.name = user.firstName + ' ' + user.lastName;
-                    res.redirect('/user/profile');
+                    res.redirect('/trips/');
                     console.log(req.session.name);
                     console.log(req.session);
             } else {
