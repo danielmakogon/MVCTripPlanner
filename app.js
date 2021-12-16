@@ -47,7 +47,7 @@ app.use((req, res, next)=>{
 mongoose.connect("mongodb+srv://admin:4155TripMaster@cluster0.aoxmt.mongodb.net/TripMaster?retryWrites=true&w=majority", {})
 .then(()=> {
     app.listen(PORT, ()=>{
-        console.log('Server is running on port', port);
+        console.log('Server is running on port', PORT);
     });
 })
 .catch(err => console.log(err.message));
